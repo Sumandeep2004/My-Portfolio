@@ -34,7 +34,7 @@ const About = () => {
 
         {/* Download CV Button */}
         <a
-          href="/Resume.pdf" // replace with your actual CV file path
+          href="./Resume.pdf" // replace with your actual CV file path
           download
           className="inline-block mt-8 px-6  py-3  bg-[#9F3D3D] text-white text-2xl font-semibold rounded-lg shadow-md transition duration-300 ease-in-out border-3 border-black  hover:bg-[#832f2f]"
         >
