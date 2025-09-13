@@ -1,7 +1,7 @@
 import Tilt from 'react-parallax-tilt';
 import { Typewriter } from 'react-simple-typewriter';
 import me from '../../assets/resume_photo.jpg';
-import ResumePdf from '../../assets/Resume.pdf';
+
 
 const About = () => {
   return (
@@ -33,14 +33,7 @@ const About = () => {
           Currently, I’m focused on becoming a full-fledged Full Stack MERN Developer while contributing to real-world projects and learning every day.
         </p>
 
-        {/* Download CV Button */}
-        <a
-          href={ResumePdf}
-          download="Suman-Grewal-Resume.pdf"
-          className="inline-block mt-8 px-6 py-3 bg-[#9F3D3D] text-white text-2xl font-semibold rounded-lg shadow-md transition duration-300 ease-in-out border-3 border-black hover:bg-[#832f2f]"
-        >
-          Download CV
-        </a>
+    
       </div>
 
       <Tilt
