@@ -35,7 +35,7 @@ const About = () => {
 
         {/* Download CV Button */}
         <a
-          href="{Resume}"
+          href={Resume}
           className="inline-block mt-8 px-6  py-3  bg-[#9F3D3D] text-white text-2xl font-semibold rounded-lg shadow-md transition duration-300 ease-in-out border-3 border-black  hover:bg-[#832f2f]"
         >
           Download CV
