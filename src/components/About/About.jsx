@@ -1,7 +1,8 @@
-
 import Tilt from 'react-parallax-tilt';
 import { Typewriter } from 'react-simple-typewriter';
-import me from '../../assets/resume_photo.jpg'
+import me from '../../assets/resume_photo.jpg';
+import ResumePdf from '../../assets/Resume.pdf';
+
 const About = () => {
   return (
     <div
@@ -9,7 +10,7 @@ const About = () => {
       id="about"
     >
       <div>
-        <h1 className='text-[#2E2E2E] poppins-extrabold-italic text-4xl md:text-5xl leading-tight'>
+        <h1 className="text-[#2E2E2E] poppins-extrabold-italic text-4xl md:text-5xl leading-tight">
           Hi, I am <br /> Suman Grewal
         </h1>
         <h2 className="text-[#9F3D3D] text-2xl mt-4 poppins-semibold">
@@ -18,7 +19,7 @@ const About = () => {
             words={[' Computer Science Student', '  Frontend React Developer']}
             loop={true}
             cursor
-            cursorStyle='_'
+            cursorStyle="_"
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1500}
@@ -34,29 +35,29 @@ const About = () => {
 
         {/* Download CV Button */}
         <a
-          href="/Resume.pdf"
-          className="inline-block mt-8 px-6  py-3  bg-[#9F3D3D] text-white text-2xl font-semibold rounded-lg shadow-md transition duration-300 ease-in-out border-3 border-black  hover:bg-[#832f2f]"
+          href={ResumePdf}
+          download="Suman-Grewal-Resume.pdf"
+          className="inline-block mt-8 px-6 py-3 bg-[#9F3D3D] text-white text-2xl font-semibold rounded-lg shadow-md transition duration-300 ease-in-out border-3 border-black hover:bg-[#832f2f]"
         >
           Download CV
         </a>
       </div>
 
       <Tilt
-  tiltMaxAngleX={15}
-  tiltMaxAngleY={15}
-  perspective={1000}
-  scale={1.05}
-  transitionSpeed={1000}
-  gyroscope={true}
-  className="flex justify-center items-center"
->
-  <img
-     src={me} // Replace with your actual image path
-    alt="Suman Grewal"
-    className="rounded-full shadow-lg w-96 h-96 object-cover border-3 border-black"
-  />
-</Tilt>
-
+        tiltMaxAngleX={15}
+        tiltMaxAngleY={15}
+        perspective={1000}
+        scale={1.05}
+        transitionSpeed={1000}
+        gyroscope={true}
+        className="flex justify-center items-center"
+      >
+        <img
+          src={me}
+          alt="Suman Grewal"
+          className="rounded-full shadow-lg w-96 h-96 object-cover border-3 border-black"
+        />
+      </Tilt>
     </div>
   );
 };
